@@ -1,24 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My first Vue page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zai | Personal Vue Page</title>
 
-<link rel="stylesheet" href="css/style.css"?version=0.1>
-
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/style.css?v=0.1" />
 </head>
 <body>
 
-<h1>Vue Example</h1>
+  <header class="hero">
+    <h1>Welcome to My Personal Page 💜</h1>
+    <p class="subtitle">Built with Vue 3</p>
+  </header>
 
-<p>The message is taken from 'data' inside the Vue instance by writing {{ message }} inside the div with id="app".</p>
+  <main>
+    <div id="app" class="card">
+      <h2>{{ name }}</h2>
 
-<div id="app">
-  {{ message }}
-</div>
+      <div class="info">
+        <p><span class="label">Course:</span> {{ course }}</p>
+        <p><span class="label">Dream:</span> {{ dream }}</p>
+        <p><span class="label">Current Mood:</span> {{ mood }}</p>
+      </div>
 
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+      <button class="btn" @click="changeMood">Change Mood ✨</button>
+    </div>
+  </main>
 
-<script src="js/vue.js"></script>
+  <footer class="footer">
+    <p>© {{ new Date().getFullYear() }} Zai • Made with Vue 💻</p>
+  </footer>
 
+  <!-- Vue CDN -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+  <!-- External JS -->
+  <script src="js/vue.js"></script>
 </body>
 </html>
