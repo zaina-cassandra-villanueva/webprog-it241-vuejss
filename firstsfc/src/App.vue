@@ -6,14 +6,6 @@
   <food-item2/>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      message: 'This is some text'
-    };
-  }
-};
-</script>
+<script></script>
 
 <style></style>
