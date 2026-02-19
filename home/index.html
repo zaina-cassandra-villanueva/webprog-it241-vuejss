@@ -26,11 +26,24 @@
       </div>
 
       <button class="btn" @click="changeMood">Change Mood ✨</button>
+
+      <!-- NEW: Gallery -->
+      <hr class="divider">
+
+      <h3 class="section-title">My Food Gallery 🍽️</h3>
+      <p class="section-subtitle">Created using <strong>v-for</strong> in Vue.</p>
+
+      <div class="gallery">
+        <figure v-for="food in manyFoods" :key="food.name" class="tile">
+          <img :src="food.url" :alt="food.name">
+          <figcaption>{{ food.name }}</figcaption>
+        </figure>
+      </div>
     </div>
   </main>
 
   <footer class="footer">
-    <p>© {{ new Date().getFullYear() }} Zai • Made with Vue 💻</p>
+    <p>© 2026 Zai • Made with Vue 💻</p>
   </footer>
 
   <!-- Vue CDN -->

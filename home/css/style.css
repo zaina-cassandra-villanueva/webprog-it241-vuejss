@@ -27,7 +27,7 @@ body {
 }
 
 .card {
-  width: min(420px, 95%);
+  width: min(520px, 95%);
   margin: 30px auto;
   background: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -68,6 +68,54 @@ body {
 .btn:hover {
   transform: translateY(-2px);
   opacity: 0.95;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.25);
+  margin: 22px 0 16px;
+}
+
+.section-title {
+  font-size: 1.15rem;
+  margin-bottom: 6px;
+}
+
+.section-subtitle {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-bottom: 14px;
+}
+
+/* NEW: Gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+}
+
+.tile {
+  width: 110px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #4b6cb7;
+  border-radius: 12px;
+  transition: 0.25s;
+}
+
+.tile:hover {
+  transform: scale(1.05);
+}
+
+.tile img {
+  width: 100%;
+}
+
+.tile figcaption {
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 0.9rem;
 }
 
 .footer {
