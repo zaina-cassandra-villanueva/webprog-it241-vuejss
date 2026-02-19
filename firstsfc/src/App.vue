@@ -4,6 +4,9 @@
   <food-item/>
   <food-item2/>
   <food-item2/>
+
+  <h2>Profile</h2>
+  <profile-page/>
 </template>
 
 <script></script>
