@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div = class"peaches">
     <h2>{{ name }}</h2>
     <p>{{ message }}</p>
   </div>
@@ -16,4 +16,12 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.peaches {
+  border: dashed pink 1px;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  background-color: palevioletred;
+}
+</style>
